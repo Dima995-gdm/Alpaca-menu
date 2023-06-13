@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Alpaca menu</title>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                @include('blocks/header/logo/index.html')
+                @include('blocks/menu/index.html')
+                <a href="tel:+13212223333" class="header__phone">+1 (321) 222 - 33 -33</a>
+                @include('blocks/header/hamburger/index.html')
+            </div>
+        </div>
+    </header>
+</body>
+</html>

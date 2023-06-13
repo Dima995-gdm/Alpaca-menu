@@ -1,0 +1,46 @@
+html, body, h1, h2, h3, h4, h5, h6,
+p,ol, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page {
+    background-image: url('../img/alpaca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+}
+
+
+@media (max-width: 991px) {
+    .page.overlay::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgba(19, 20, 23, 0.5);
+        z-index: 5;
+    }
+}

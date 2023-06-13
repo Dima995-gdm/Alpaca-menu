@@ -1,0 +1,42 @@
+.hamburger {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        width: 22px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .hamburger__band {
+        background: #F2994A;
+        display: block;
+        height: 2px;
+        margin-bottom: 5px;
+        transition: all .5s;
+        width: 100%;
+    }
+    
+    .hamburger__band:last-child {
+        margin-bottom: 0;
+    }
+    
+    .hamburger.active .hamburger__band {
+        margin-bottom: -2px;
+    }
+    
+    .hamburger.active .hamburger__band:first-child {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger.active .hamburger__band:nth-child(2) {
+        display: none;
+    }
+    
+    .hamburger.active .hamburger__band:nth-child(3) {
+        transform: rotate(45deg);
+    }
+}
