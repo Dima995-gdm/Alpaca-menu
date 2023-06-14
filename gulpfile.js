@@ -56,6 +56,7 @@ const watchFiles = () => {
         },
     });
     watch(`${srcFolder}/*.html`, htmlInclude);
+    watch(paths.srcHtml, htmlInclude);
     watch(paths.srcCss, styles);
     watch(paths.srcImgFolder, imgToApp);
 };
